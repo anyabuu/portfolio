@@ -1,0 +1,51 @@
+.footer__container {
+  padding-top: 114px;
+  padding-bottom: 123px;
+  @include media-phone {
+    padding-top: 82px;
+    padding-bottom: 90px;
+  }
+}
+.footer__title {
+  padding-bottom: 20px;
+  @include media-phone {
+    padding-bottom: 27px;
+  }
+}
+.footer__text {
+  text-align: center;
+  padding-bottom: 29px;
+  @include media-phone {
+    padding-bottom: 39px;
+  }
+}
+.footer__button {
+  color: white;
+  border-radius: 20px;
+  background: var(--main-text);
+  text-align: center;
+  cursor: pointer;
+  padding: 13px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 85px;
+  @include media-phone {
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 48px;
+  }
+}
+.footer__socials-group {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.footer__social-invitation {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--secondary-text);
+  padding-top: 45px;
+  text-align: center;
+}

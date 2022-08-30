@@ -1,0 +1,54 @@
+:root {
+  --main-text:  #070707;
+  --secondary-text: #828282;
+  --color-background: #F6F6F6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10px;
+  color: var(--main-text);
+}
+
+.container {
+  width: 1445px;
+  margin-right: auto;
+  margin-left: auto;
+  @include media-tablet {
+    width: 92%;
+  }
+}
+
+.small-container {
+  width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+  @include media-tablet {
+    width: 95%;
+  }
+  @include media-phone {
+    width: 90%;
+  }
+}
+
+.title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.title-checked {
+  color: var(--main-text);
+}
+
+.description-text {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.1;
+}

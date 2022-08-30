@@ -1,0 +1,129 @@
+.hero {
+  padding-top: 42px;
+  padding-bottom: 98px;
+  @include media-tablet{
+    padding-bottom: 83px;
+  }
+}
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 23px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--secondary-text);
+  border-bottom: 1px solid var(--secondary-text);
+  gap: 160px;
+  @include media-tablet {
+    justify-content: space-around;
+    gap: 0;
+  }
+  @include media-phone {
+    display: none;
+  }
+}
+.hero__main-group {
+  @include media-phone {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.hero__main-group-wrapper {
+  padding-top: 36px;
+  padding-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-phone {
+    flex-direction: column;
+    gap: 23px;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+}
+.hero__title {
+  font-size: 4.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.hero__language {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  transform: rotate(-90deg);
+  @include media-phone {
+    display: none;
+  }
+}
+.hero__image {
+  width: 100%;
+  @include media-phone {
+    display: none;
+  }
+}
+.hero__image-mobile {
+  display: none;
+  @include media-phone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+.hero__mobile-menu-btn {
+  display: none;
+  @include media-phone {
+    display: inline-block;
+    cursor: pointer;
+    &.active {
+      z-index: 1;
+    }
+  }
+}
+
+.hero__mobile-menu-btn.active div:nth-of-type(1) {
+  transform: rotate(-45deg) translate(1px, -1px);
+  background-color: var(--secondary-text);
+}
+
+.hero__mobile-menu-btn.active div:nth-of-type(2) {
+    display: none;
+  }
+
+.hero__mobile-menu-btn.active div:nth-of-type(3) {
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: var(--secondary-text);
+}
+
+.hero__mobile-menu-bar {
+  width: 33px;
+  height: 3.8px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hero__menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 66px 28px;
+  background: white;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+
+  &.active {
+    transform: translateY(0);
+  }
+}
+.hero__menu-list-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  color: var(--secondary-text);
+}
+
