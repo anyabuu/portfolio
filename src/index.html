@@ -19,27 +19,27 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a class="header__nav-item-link" href="#">
+                        <a class="header__nav-item-link" href="#home">
                             Home
                         </a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-item-link" href="#">
+                        <a class="header__nav-item-link" href="#about">
                             About me
                         </a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-item-link" href="#">
+                        <a class="header__nav-item-link" href="#skills">
                             Skills
                         </a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-item-link" href="#">
+                        <a class="header__nav-item-link" href="#portfolio">
                             Portfolio
                         </a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-item-link" href="#">
+                        <a class="header__nav-item-link" href="#contacts">
                             Contacts
                         </a>
                     </li>
@@ -50,21 +50,27 @@
         <div class="hero__main small-container">
             <div class="hero__main-group">
                 <div class="hero__main-group-wrapper">
-                    <h1 class="hero__title">
-                        Denis <br>
-                        Novik
-                    </h1>
+                    <a class="test" id="home">
+                      <h1 class="hero__title">
+                          Denis <br>
+                          Novik
+                      </h1>
+                    </a>
                     <p class="hero__description description-text">
                         UX | UI designer <br>
                         24 years old, Minsk
                     </p>
-                    <p class="hero__language">
-                        RU | ENG
-                    </p>
+                    <div class="hero__language-wrapper language-wrapper">
+                      <input type="radio" value="ru" class="hero__lang-radio" name="lang-type" id="ru">
+                      <label class="hero__lang-label" for="ru">
+                            RU
+                      </label>
+                      <input type="radio" value="eng" class="hero__lang-radio" name="lang-type" id="eng" checked>
+                      <label class="hero__lang-label" for="eng">
+                            ENG
+                      </label>
+                    </div>
                 </div>
-
-
-
                 <div class="hero__mobile-menu-btn">
                     <div class="hero__mobile-menu-bar1 hero__mobile-menu-bar"></div>
                     <div class="hero__mobile-menu-bar2 hero__mobile-menu-bar"></div>
@@ -75,32 +81,51 @@
                     <nav class="hero__menu-nav-mobile">
                         <ul class="hero__menu-list-mobile">
                             <li class="hero__menu-list-item-mobile">
-                                <a class="hero__nav-item-link-mobile title title-checked" href="#">
+                                <a class="hero__nav-item-link-mobile title" href="#home">
                                     Home
                                 </a>
                             </li>
                             <li class="hero__menu-list-item-mobile">
-                                <a class="hero__nav-item-link-mobile title" href="#">
+                                <a class="hero__nav-item-link-mobile title" href="#about">
                                     About me
                                 </a>
                             </li>
                             <li class="hero__menu-list-item-mobile">
-                                <a class="hero__nav-item-link-mobile title" href="#">
+                                <a class="hero__nav-item-link-mobile title" href="#skills">
                                     Skills
                                 </a>
                             </li>
                             <li class="hero__menu-list-item-mobile">
-                                <a class="hero__nav-item-link-mobile title" href="#">
+                                <a class="hero__nav-item-link-mobile title" href="#portfolio">
                                     Portfolio
                                 </a>
                             </li>
                             <li class="hero__menu-list-item-mobile">
-                                <a class="hero__nav-item-link-mobile title" href="#">
+                                <a class="hero__nav-item-link-mobile title" href="#contacts">
                                     Contacts
                                 </a>
                             </li>
                         </ul>
                     </nav>
+
+                  <div class="hero__mobile-buttons-wrapper">
+                    <div class="hero__mobile-menu-btn-cross">
+                      <div class="hero__mobile-menu-cross1 hero__mobile-menu-cross"></div>
+                      <div class="hero__mobile-menu-cross2 hero__mobile-menu-cross"></div>
+                    </div>
+
+                    <div class="hero__mobile-language-wrapper language-wrapper">
+                      <input type="radio" value="ru" class="hero__lang-radio" name="lang-type" id="ru-mobile">
+                      <label class="hero__lang-label" for="ru-mobile">
+                        RU
+                      </label>
+                      <input type="radio" value="eng" class="hero__lang-radio" name="lang-type" id="eng-mobile">
+                      <label class="hero__lang-label" for="eng-mobile">
+                        ENG
+                      </label>
+                    </div>
+
+                  </div>
 
                 </div>
 
@@ -120,9 +145,11 @@
 
 <section class="about">
     <div class="container about__container">
-        <h2 class="about__title title">
-            About me
-        </h2>
+        <a class="test" id="about">
+          <h2 class="about__title title">
+              About me
+          </h2>
+        </a>
         <div class="about__description-wrapper">
             <p class="about__text description-text">
                 Hi, I'm Denis – UX/UI designer from Minsk.
@@ -146,69 +173,79 @@
 
 <section class="skills">
     <div class="container skills__container">
-        <h2 class="skills__title title">
-            Skills
-        </h2>
+        <a class="test" id="skills">
+          <h2 class="skills__title title">
+              Skills
+          </h2>
+        </a>
         <p class="skills__text description-text">
             I work in such programs as
         </p>
         <div class="skills__program-group">
             <ul class="skills__program-list">
-                <li class="skills__program-item">
-                    <img class="skills__program-logo" src="img/ps-icon.svg" alt="this is ps logo">
-                    <p class="skills__program-name">
-                        Adobe
-                        Photoshop
-                    </p>
-                    <div class="skills__program-rate">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
-                    </div>
-                </li>
-                <li class="skills__program-item">
-                    <img class="skills__program-logo" src="img/ai-icon.svg" alt="this is ai logo">
-                    <p class="skills__program-name">
-                        Adobe
-                        Illustrator
-                    </p>
-                    <div class="skills__program-rate">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
-                        <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
-                    </div>
-                </li>
-                <li class="skills__program-item">
-                    <img class="skills__program-logo" src="img/ae-icon.svg" alt="this is ae logo">
-                    <p class="skills__program-name">
-                        Adobe
-                        After Effects
-                    </p>
-                    <div class="skills__program-rate">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
-                    </div>
-                </li>
-                <li class="skills__program-item">
-                    <img class="skills__program-logo" src="img/figma-icon.svg" alt="this is figma logo">
-                    <p class="skills__program-name">
-                        Figma
-                    </p>
-                    <div class="skills__program-rate">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
-                        <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
-                    </div>
-                </li>
+              <li class="skills__program-item">
+                <a class="skills__program-link" href="#">
+                  <img class="skills__program-logo" src="img/ps-icon.svg" alt="this is ps logo">
+                  <p class="skills__program-name">
+                      Adobe
+                      Photoshop
+                  </p>
+                </a>
+                <div class="skills__program-rate">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
+                </div>
+              </li>
+              <li class="skills__program-item">
+                <a class="skills__program-link" href="#">
+                  <img class="skills__program-logo" src="img/ai-icon.svg" alt="this is ai logo">
+                  <p class="skills__program-name">
+                      Adobe
+                      Illustrator
+                  </p>
+                </a>
+                <div class="skills__program-rate">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
+                    <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
+                </div>
+              </li>
+              <li class="skills__program-item">
+                <a class="skills__program-link" href="#">
+                  <img class="skills__program-logo" src="img/ae-icon.svg" alt="this is ae logo">
+                  <p class="skills__program-name">
+                      Adobe
+                      After Effects
+                  </p>
+                </a>
+                <div class="skills__program-rate">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
+                </div>
+              </li>
+              <li class="skills__program-item">
+                <a class="skills__program-link" href="#">
+                  <img class="skills__program-logo" src="img/figma-icon.svg" alt="this is figma logo">
+                  <p class="skills__program-name">
+                      Figma
+                  </p>
+                </a>
+                <div class="skills__program-rate">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/full-star.svg" alt="this is full star">
+                    <img class="skills__program-star-logo" src="img/empty-star.svg" alt="this is empty star">
+                </div>
+              </li>
             </ul>
         </div>
     </div>
@@ -220,9 +257,11 @@
 
 <section class="portfolio">
     <div class="container portfolio__container">
-        <h2 class="portfolio__title title">
-            Portfolio
-        </h2>
+        <a class="test" id="portfolio">
+          <h2 class="portfolio__title title">
+              Portfolio
+          </h2>
+        </a>
         <ul class="portfolio__work-list">
             <li class="portfolio__work-item">
                 <img class="portfolio__work-img" src="img/levis-page.jpg" alt="this is work example">
@@ -252,9 +291,11 @@
 
 <section class="footer">
     <div class="container footer__container">
-        <h2 class="footer__title title">
-            Contacts
-        </h2>
+        <a class="test" id="contacts">
+          <h2 class="footer__title title">
+              Contacts
+          </h2>
+        </a>
         <p class="footer__text description-text">
             Want to know more or just chat? <br>
             You are welcome!
