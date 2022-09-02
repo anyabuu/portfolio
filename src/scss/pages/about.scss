@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include media-tablet {
     padding-top: 81px;
     padding-bottom: 76px;
@@ -14,20 +15,24 @@
 
 .about__title {
   padding-bottom: 18px;
+
   @include media-phone {
     padding-bottom: 29px;
   }
 }
+
 .about__description-wrapper {
   display: flex;
   text-align: center;
   flex-direction: column;
   width: 485px;
   gap: 40px;
+
   @include media-phone {
     width: 80%;
   }
 }
+
 .skills__program-item {
   display: flex;
   flex-direction: column;

@@ -2,38 +2,47 @@
   padding-top: 112px;
   padding-bottom: 96px;
   background-color: var(--color-background);
+
   @include media-tablet {
     padding-top: 81px;
     padding-bottom: 80px;
     width: 100%;
   }
 }
+
 .portfolio__title {
   padding-bottom: 47px;
 }
+
 .portfolio__work-list {
   display: flex;
   flex-direction: column;
   gap: 99px;
+
   @include media-phone {
     gap: 77px;
   }
 }
+
 .portfolio__work-item {
   display: flex;
   flex-direction: column;
   gap: 44px;
   align-items: center;
+
   @include media-phone {
     gap: 33px;
   }
 }
+
 .portfolio__work-img {
   width: 936px;
+
   @include media-tablet {
     width: 85%;
   }
 }
+
 .portfolio__work-link {
   text-decoration: underline;
 }

@@ -1,7 +1,7 @@
 :root {
-  --main-text:  #070707;
+  --main-text: #070707;
   --secondary-text: #828282;
-  --color-background: #F6F6F6;
+  --color-background: #f6f6f6;
 }
 
 * {
@@ -10,7 +10,7 @@
 
 body,
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 10px;
   color: var(--main-text);
 }
@@ -19,6 +19,7 @@ html {
   width: 1445px;
   margin-right: auto;
   margin-left: auto;
+
   @include media-tablet {
     width: 92%;
   }
@@ -28,9 +29,11 @@ html {
   width: 970px;
   margin-right: auto;
   margin-left: auto;
+
   @include media-tablet {
     width: 95%;
   }
+
   @include media-phone {
     width: 90%;
   }
